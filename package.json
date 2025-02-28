@@ -1,0 +1,55 @@
+{
+	"name": "run-file-command",
+	"displayName": "Run File Command",
+	"description": "Run script files via context menu",
+	"version": "1.0.0",
+	"publisher": "ntkhang03",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"activationEvents": [
+		"onCommand:run-file-command.runFileCommand",
+		"onCommand:run-file-command.runFileCommandAdmin"
+	],
+	"icon": "images/icon.png",
+	"categories": [
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ntkhang03/run-file-command"
+	},
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "run-file-command.runFileCommand",
+				"title": "Run this file command",
+				"when": "resourceLangId in (bat, powershell, shellscript)"
+			},
+			{
+				"command": "run-file-command.runFileCommandAdmin",
+				"title": "Run as administrator",
+				"when": "resourceLangId in (bat, powershell, shellscript)"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "run-file-command.runFileCommand",
+					"group": "run-file-command"
+				},
+				{
+					"command": "run-file-command.runFileCommandAdmin",
+					"group": "run-file-command"
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"child_process": "^1.0.2"
+	},
+	"scripts": {
+		"package": "vsce package"
+	}
+}
