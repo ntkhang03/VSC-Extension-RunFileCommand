@@ -32,6 +32,10 @@ Run File Command is a Visual Studio Code extension that allows you to execute di
 - `.js` - JavaScript files
 - Executable files without extension
 
+# Screenshots
+
+![Windows Context Menu](screenshots/Screenshot1.png)
+
 ## Installation
 
 1. Open VS Code
@@ -61,14 +65,6 @@ This extension doesn't add any configurable settings yet.
 
 - On macOS, administrator privileges might require additional permission dialogs
 
-## Release Notes
-
-### 1.0.0
-
-- Initial release
-- Support for Windows, Linux and macOS
-- Support for batch, PowerShell, shell scripts, executable files, Python and JavaScript files
-
 ## License
 
 This extension is licensed under the [included license](LICENSE).
@@ -77,4 +73,4 @@ This extension is licensed under the [included license](LICENSE).
 
 **Made by [ntkhang03](https://github.com/ntkhang03)**
 
-If you find this extension useful, consider [starring the repository](https://github.com/ntkhang03/run-file-command)!
+If you find this extension useful, consider [starring the repository](https://github.com/ntkhang03/VSC-Extension-RunFileCommand)!

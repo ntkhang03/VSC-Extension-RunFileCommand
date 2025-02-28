@@ -2,7 +2,7 @@
 	"name": "run-file-command",
 	"displayName": "Run File Command",
 	"description": "Run script files via context menu",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "ntkhang03",
 	"engines": {
 		"vscode": "^1.70.0"
@@ -17,7 +17,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ntkhang03/run-file-command"
+		"url": "https://github.com/ntkhang03/VSC-Extension-RunFileCommand"
 	},
 	"main": "./extension.js",
 	"contributes": {
